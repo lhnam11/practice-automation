@@ -1,0 +1,41 @@
+package Day2_BasicofElement;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class DropdownListDeMoQA {
+	public static void main(String[] args) throws Exception {
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demoqa.com/select-menu");
+		
+		
+		// static dropdown dùng select, dynamic dropdown thường dùng div ul li 
+	    // trường hợp  select option thì dùng git 
+		WebElement selectValue = driver.findElement(By.xpath("//*[@id=\"withOptGroup\"]"));
+		selectValue.click();
+		Thread.sleep(2000);
+		 List<WebElement> options = driver.findElements(By.xpath("//div[@id='react-select-2-option-0-0']/ancestor::div[contains(@class, 'css-11unzgr')]/div"));
+
+	        // In ra từng giá trị
+	        for (WebElement opt : options) {
+	            System.out.println("Option: " + opt.getText());
+	        }
+
+	        // Chọn option đầu tiên (ví dụ)
+	        if (!options.isEmpty()) {
+	            options.get(0).click();
+	        }
+
+	        Thread.sleep(1000);
+	        driver.quit();
+		
+		
+		
+	}
+
+}

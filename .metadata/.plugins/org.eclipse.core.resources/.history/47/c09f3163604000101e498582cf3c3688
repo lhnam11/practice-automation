@@ -1,0 +1,29 @@
+package Day2_BasicofElement;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.Set;
+
+public class NoSwitchExample {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://demoqa.com/browser-windows");
+
+        // Lưu lại ID cửa sổ hiện tại
+        String mainWindow = driver.getWindowHandle();
+        System.out.println("Cửa sổ chính: " + mainWindow);
+
+        // Giả sử người dùng click mở thêm 1 cửa sổ mới ở đây
+        // Bạn chỉ muốn in danh sách các ID, không chuyển sang cửa sổ khác
+        Set<String> allWindows = driver.getWindowHandles();
+        System.out.println("Tất cả các cửa sổ:");
+        for (String windowId : allWindows) {
+            System.out.println(" - ID: " + windowId);
+        }
+
+        driver.quit();
+    }
+}
+

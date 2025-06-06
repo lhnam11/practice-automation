@@ -1,0 +1,36 @@
+package Day2_BasicofElement;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NoSwitchExample {
+    public static void main(String[] args) throws Exception {
+    	 System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+         WebDriver driver = new ChromeDriver();
+         driver.manage().window().maximize();
+         driver.get("https://demoqa.com/browser-windows");
+
+         // Click để mở cửa sổ mới
+         driver.findElement(By.id("tabButton")).click();
+         driver.findElement(By.id("windowButton")).click();
+         driver.findElement(By.id("messageWindowButton")).click();
+        
+         // Lưu ID cửa sổ hiện tại
+         String mainWindow = driver.getWindowHandle();
+
+         Set<String> allWindows = driver.getWindowHandles();
+         for (String windowHandle : allWindows) {
+             driver.switchTo().window(windowHandle); // Phải switch để lấy thông tin cửa sổ đó
+           
+             System.out.println("Chuyển sang: " + driver.getTitle());
+         }
+         
+         Thread.sleep(2000);
+         
+         driver.quit();
+     }
+}
+

@@ -1,0 +1,46 @@
+package Day2_BasicofElement;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Basic {
+	public static void main(String[] args) throws Exception {
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demoqa.com/text-box");
+		Thread.sleep(3000);
+	
+		
+		WebElement input_UserName = driver.findElement(By.id("userName"));
+		input_UserName.sendKeys("Lê Hoài Nam haha");
+		Thread.sleep(2000);
+		
+		input_UserName.clear();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.id("submit")).click();
+		Thread.sleep(2000);
+		
+		
+		boolean isVisible = input_UserName.isDisplayed();
+		System.out.println("Hiển thị không? " + isVisible);
+		Thread.sleep(2000);
+		boolean isEnable = input_UserName.isEnabled();
+		System.out.println("Nút input có được bật không? " + isEnable);
+		Thread.sleep(2000);
+		driver.findElement(By.id("submit")).submit();
+		Thread.sleep(2000);
+		
+		WebElement getText1 = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/h1"));
+		
+		System.out.println("Thông tin của chữ text-center: " + getText1.getText() +" " + getText1.getTagName() + getText1.getSize());
+		Thread.sleep(2000);
+		System.out.println("Color: " + getText1.getCssValue("color"));
+		Thread.sleep(2000);
+		driver.quit();
+		
+	}
+}

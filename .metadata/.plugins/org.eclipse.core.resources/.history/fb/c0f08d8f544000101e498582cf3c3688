@@ -1,0 +1,95 @@
+package Day2_BasicofElement;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Basic {
+	public static void main(String[] args) throws Exception {
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		WebDriverWait wait = new WebDriverWait(driver, 10); // Không dùng Duration
+
+		driver.manage().window().maximize();
+
+		driver.navigate().to("https://demoqa.com/text-box");
+
+		// Chờ phần tử input xuất hiện
+		WebElement input_UserName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userName")));
+		input_UserName.sendKeys("Lê Hoài Nam haha");
+
+		input_UserName.clear();
+
+		// cách tắt quảng cáo
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.getElementById('adplus-anchor').style.display='none';");
+
+		// Chờ nút submit có thể click
+		WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);// cuộn khỏi
+																										// thanh quảng
+																										// cáo
+
+		submitButton.click();
+
+		boolean isVisible = input_UserName.isDisplayed();
+		System.out.println("Hiển thị không? " + isVisible);
+
+		boolean isEnable = input_UserName.isEnabled();
+		System.out.println("Nút input có được bật không? " + isEnable);
+
+		submitButton.submit();
+
+		// Chờ tiêu đề h1 xuất hiện
+		WebElement getText1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#userName")));
+
+		System.out.println("Thông tin của chữ text-center: " + getText1.getText() + " " + getText1.getTagName() + " "
+				+ getText1.getSize());
+		System.out.println("Color: " + getText1.getCssValue("color"));
+
+		driver.navigate().to("https://demoqa.com/select-menu");
+		WebElement seclectElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("oldSelectMenu")));
+		// WebElement seclectElement = driver.findElement(By.id("oldSelectMenu"));
+		Select select = new Select(seclectElement);
+
+		List<WebElement> options = select.getOptions();
+		for (int i = 0; i < options.size(); i++) {
+			System.out.println(options.get(i).getText());
+		}
+		Thread.sleep(1000);
+		driver.navigate().back();
+
+		// MỞ TRANG FRAMES
+		driver.get("https://demoqa.com/frames");
+
+		// CHUYỂN VÀO FRAME THEO ID
+		driver.switchTo().frame("frame1");
+
+		// LẤY TEXT BÊN TRONG FRAME
+		WebElement heading = driver.findElement(By.id("sampleHeading"));
+		System.out.println("Text trong frame1: " + heading.getText());
+
+		// QUAY LẠI NỘI DUNG CHÍNH
+		driver.switchTo().defaultContent();
+
+		Thread.sleep(2000); // Để bạn thấy sự chuyển đổi
+
+		// GIẢ LẬP ALERT BẰNG JAVASCRIPT (vì trang không có sẵn alert)
+		((org.openqa.selenium.JavascriptExecutor) driver).executeScript("alert('Xin chào từ alert!')");
+
+		// CHUYỂN ĐẾN ALERT VÀ ACCEPT
+		driver.switchTo().alert().accept();
+
+		Thread.sleep(1000);
+		driver.quit();
+
+	
+	}
+}

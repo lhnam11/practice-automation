@@ -1,0 +1,82 @@
+package Day2_BasicofElement;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class DropdownListDeMoQA {
+    
+    public static void scrollToElement(WebDriver driver, WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public static void main(String[] args) throws Exception {
+        System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://demoqa.com/select-menu");
+
+//        // Chọn Select Value
+//        WebElement selectValue = driver.findElement(By.xpath("//div[@id='withOptGroup']"));
+//        scrollToElement(driver, selectValue);
+//        selectValue.click();
+//        Thread.sleep(1000);
+//        WebElement case1 = driver.findElement(By.xpath("//div[contains(text(),'Group 1, option 1')]"));
+//        case1.click();
+//        Thread.sleep(1000);
+
+  
+        
+        List<WebElement> listSelectOne = driver.findElements(By.xpath("//div[@class=' css-1s9izoc']/div"));
+        System.out.println("Danh sách lựa chọn trong Seletone");
+        for(WebElement selectone : listSelectOne)
+        {
+        	scrollToElement(driver, selectone);
+        	String textSO = selectone.getText();
+        	System.out.println("Optione Selectone: " + textSO);
+        	selectone.click();
+        	Thread.sleep(500)
+        }
+
+        // ✅ Chọn Old Style Select Menu css-1s9izoc
+        WebElement oldSelectMenu = driver.findElement(By.id("oldSelectMenu"));
+        scrollToElement(driver, oldSelectMenu); // cuộn tới dropdown này
+        Select select = new Select(oldSelectMenu);
+
+        List<WebElement> options = select.getOptions();
+        System.out.println("📌 Old Style Select Menu:");
+        for (int i = 0; i < options.size(); i++) {
+            WebElement option = options.get(i);
+            System.out.println("Option " + i + ": " + option.getText());
+            select.selectByIndex(i);
+            Thread.sleep(500); // 
+        }
+        
+        WebElement mutilDrop = driver.findElement(By.xpath("//div[@class=' css-1wa3eu0-placeholder']"));
+        scrollToElement(driver, mutilDrop);
+        mutilDrop.click();
+        
+        List<WebElement> mutiloptions = driver.findElements(By.xpath("//div[@class=' css-11unzgr']/div"));//div[@class=' css-11unzgr']
+        
+        System.out.println("Danh sách lựa chọn trong Mutilselectt");
+        for (WebElement mutil : mutiloptions)
+        {
+        	scrollToElement(driver, mutil);
+        	String text = mutil.getText();
+        	System.out.println("Option: " + text);
+        	mutil.click();
+        	Thread.sleep(500);
+        }
+        
+        
+        Thread.sleep(2000);
+        
+        // ✅ Đóng trình duyệt sau khi xử lý xong
+        driver.quit();
+    }
+}

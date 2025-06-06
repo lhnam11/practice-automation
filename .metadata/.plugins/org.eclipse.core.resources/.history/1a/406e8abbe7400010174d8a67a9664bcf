@@ -1,0 +1,30 @@
+package Day2_BasicofElement;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CheckBox {
+	public static void main(String[] args) throws Exception {
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demoqa.com/checkbox");
+		Thread.sleep(1000);
+		
+		WebElement checkboxElement = driver.findElement(By.id("tree-node-desktop"));
+		boolean isChecked = checkboxElement.isSelected();
+		if (isChecked) {
+		    System.out.println("Checkbox 'Desktop' đã được chọn.");
+		    // Bạn có thể thêm các hành động khác nếu checkbox đã được chọn
+		} else {
+		    System.out.println("Checkbox 'Desktop' chưa được chọn.");
+		    // Nếu muốn chọn nó nếu nó chưa được chọn:
+		    checkboxElement.click(); // Nhấp vào checkbox để chọn nó
+		    System.out.println("Đã nhấp để chọn checkbox 'Desktop'.");
+		}
+		driver.quit();
+	}
+
+}

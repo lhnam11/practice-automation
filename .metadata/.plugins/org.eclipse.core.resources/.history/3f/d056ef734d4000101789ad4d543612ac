@@ -1,0 +1,56 @@
+package Day2_BasicofElement;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Basic {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        WebDriverWait wait = new WebDriverWait(driver, 10); // Không dùng Duration
+
+        
+        driver.manage().window().maximize();
+
+        
+
+        driver.navigate().to("https://demoqa.com/text-box");
+
+        // Chờ phần tử input xuất hiện
+        WebElement input_UserName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userName")));
+        input_UserName.sendKeys("Lê Hoài Nam haha");
+
+        input_UserName.clear();
+
+        // Chờ nút submit có thể click
+        WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
+        submitButton.click();
+
+        boolean isVisible = input_UserName.isDisplayed();
+        System.out.println("Hiển thị không? " + isVisible);
+
+        boolean isEnable = input_UserName.isEnabled();
+        System.out.println("Nút input có được bật không? " + isEnable);
+
+        submitButton.submit();
+
+        // Chờ tiêu đề h1 xuất hiện
+        WebElement getText1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/h1")));
+
+        System.out.println("Thông tin của chữ text-center: " + getText1.getText() + " " + getText1.getTagName() + " " + getText1.getSize());
+        System.out.println("Color: " + getText1.getCssValue("color"));
+        
+        List<WebElement> options = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//option")));
+        for(int i = 0 ; i < options.size(); i++)
+        {
+        	System.out.println(options.get(i).getText());
+        }
+        driver.quit();
+    }
+}

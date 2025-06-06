@@ -1,0 +1,19 @@
+package DataStructures;
+
+import java.util.LinkedList;
+
+public class Linked {
+	public static void main(String[] args) {
+		LinkedList<String> cars = new LinkedList<>();
+		cars.add("car1");
+		cars.add("car2");
+		cars.add("car3");
+		System.out.println(cars.getFirst());
+		System.out.println(cars.getLast());
+		System.out.println(cars);
+		cars.addFirst("tada");
+		cars.addLast("E-S");
+		System.out.println(cars);
+	}
+
+}

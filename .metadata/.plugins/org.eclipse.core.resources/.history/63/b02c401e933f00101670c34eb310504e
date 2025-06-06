@@ -1,0 +1,133 @@
+package Day1_Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Locators {
+	public static WebDriver openBrowser() {
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		return driver;
+	}
+
+	public static void login(WebDriver driver, String email, String password) throws Exception {
+		driver.navigate().to("https://anhtester.com");
+		WebElement button_Login = driver.findElement(By.id("btn-login"));
+		button_Login.click();
+
+		WebElement input_Email = driver.findElement(By.cssSelector("input[placeholder='Email']"));
+		input_Email.sendKeys(email);
+		Thread.sleep(1000);
+		WebElement input_PassWord = driver.findElement(By.name("password"));
+		input_PassWord.sendKeys(password);
+		Thread.sleep(1000);
+		WebElement button_LoginAcccount = driver.findElement(By.id("login"));
+		button_LoginAcccount.click();
+		Thread.sleep(1000);
+		// lấy từ div đầu tiên sẽ ra kết quả đó
+		WebElement tagName = driver.findElement(By.tagName("p"));
+		String pText = tagName.getText();
+		System.out.println(pText);
+		Thread.sleep(3000);
+	}
+
+	public static String getLoginResult(WebDriver driver) {
+		try {// ví dụ: nếu login thất bại sẽ hiện alert-danger
+			WebElement errorMessage = driver.findElement(By.className("alert-danger"));
+			return "Login thất bại:" + errorMessage.getText();
+		} catch (Exception e) {
+			// nếu không thấy thông báo lỗi, có thể login thành công
+			try {
+				WebElement profileMenu = driver.findElement(By.xpath("//div[contains(@class,'dropdown-profile')]"));
+				return "✅ Login thành công";
+			} catch (Exception ex) {
+				return "không xác định được kết quả ";
+			}
+
+		}
+	}
+
+	public static void openShopeeAndClickSignUp(WebDriver driver) throws Exception {
+	    driver.navigate().to("https://shopee.vn/");
+
+	    // Đợi để trang load hoàn toàn
+	    Thread.sleep(10000);
+
+	    WebDriverWait wait = new WebDriverWait(driver, 10);
+
+	    WebElement signUpLink = wait.until(ExpectedConditions.elementToBeClickable(
+	        By.cssSelector(".navbar__link.navbar__link--signup.navbar__link--tappable.navbar__link-text.navbar__link-text--medium.navbar__link-text--normal-case")
+	    ));
+
+	    // 👉 Chờ thêm để bạn nhìn thấy vị trí nút đăng ký
+	    System.out.println("🕒 Đang hiển thị trang chủ Shopee...");
+	    Thread.sleep(7000); // Chờ 7 giây trước khi click
+
+	    signUpLink.click();
+//
+	    System.out.println("✅ Đã click vào nút Đăng ký của Shopee.");
+	    Thread.sleep(5000); // Đợi thêm để thấy kết quả click
+	}
+//	public static void openShopeeAndClickSignUp(WebDriver driver) throws Exception {
+//	    driver.navigate().to("https://shopee.vn/");
+//
+//	    // Đợi để trang load hoàn toàn
+//	    Thread.sleep(10000);
+//
+//	    WebDriverWait wait = new WebDriverWait(driver, 10);
+//
+//	    WebElement signUpLink = wait.until(ExpectedConditions.elementToBeClickable(
+//	        By.cssSelector(".navbar__link.navbar__link--signup.navbar__link--tappable.navbar__link-text.navbar__link-text--medium.navbar__link-text--normal-case")
+//	    )); nếu trên trang mình mở lên chưa load được nội dung cần tìm thì dùng wait.until sẽ ngon hơn,
+
+//
+//	    // 👉 Chờ thêm để bạn nhìn thấy vị trí nút đăng ký
+//	    System.out.println("🕒 Đang hiển thị trang chủ Shopee...");
+//	    Thread.sleep(7000); // Chờ 7 giây trước khi click
+//
+//	    signUpLink.click();
+//
+//	    System.out.println("✅ Đã click vào nút Đăng ký của Shopee.");
+//	    Thread.sleep(5000); // Đợi thêm để thấy kết quả click
+//	}
+	public static void main(String[] args) throws Exception {
+		// Ví dụ mở Shopee và bấm nút đăng ký
+		WebDriver driver = openBrowser();
+		try {
+	        openShopeeAndClickSignUp(driver);
+		} catch (Exception e) {
+			System.out.println("❌ Lỗi khi mở Shopee: " + e.getMessage());
+		} finally {
+			driver.quit();
+		}
+
+		// Phần test login cũ của bạn
+		String[][] testData = { { "tada@gmail.com", "sai mật khẩu" }, { "email_sai@gmail.com", "123456" }, { "", "" },
+				{ "nvhoainam126@gmail.com", "123456" }, // giả sử đúng
+		};
+
+		for (int i = 0; i < testData.length; i++) {
+			System.out.println("🔵 Running testcase #" + (i + 1));
+			System.out.println("📧 Email: " + testData[i][0]);
+			System.out.println("🔑 Password: " + testData[i][1]);
+
+			driver = openBrowser();
+			try {
+				login(driver, testData[i][0], testData[i][1]);
+				String result = getLoginResult(driver);
+				System.out.println("📢 Kết quả: " + result);
+			} catch (Exception e) {
+				System.out.println("❌ Lỗi khi chạy testcase: " + e.getMessage());
+			} finally {
+				driver.quit();
+				System.out.println("--------------------------------------------------");
+			}
+		}
+	}
+
+}

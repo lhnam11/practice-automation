@@ -1,0 +1,114 @@
+package Day2_BasicofElement;
+
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Basic {
+	public static void main(String[] args) throws Exception {
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
+		driver.manage().window().maximize();
+//        Thread.sleep(1000);
+
+		// Truy cập trang Text Box
+		driver.navigate().to("https://demoqa.com/text-box");
+//        Thread.sleep(1500);
+
+		// Chờ input và nhập tên
+		WebElement input_UserName = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userName")));
+		input_UserName.sendKeys("Lê Hoài Nam haha");
+		// Thread.sleep(1000);
+
+		input_UserName.clear();
+		Thread.sleep(1000);
+
+		// Ẩn quảng cáo
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.getElementById('adplus-anchor').style.display='none';");
+//        Thread.sleep(1000);
+
+		// Cuộn xuống và click submit
+		WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
+		js.executeScript("arguments[0].scrollIntoView(true);", submitButton);
+//        Thread.sleep(1000);
+
+		submitButton.click();
+		// Thread.sleep(1000);
+
+		// Kiểm tra trạng thái hiển thị và bật/tắt
+		boolean isVisible = input_UserName.isDisplayed();
+		System.out.println("Hiển thị không? " + isVisible);
+		boolean isEnable = input_UserName.isEnabled();
+		System.out.println("Nút input có được bật không? " + isEnable);
+		// Thread.sleep(1000);
+
+		// Lấy lại thông tin text
+		WebElement getText1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#userName")));
+		System.out.println("Thông tin của userName: " + getText1.getText());
+		System.out.println("Tag: " + getText1.getTagName());
+		System.out.println("Kích thước: " + getText1.getSize());
+		System.out.println("Màu chữ: " + getText1.getCssValue("color"));
+//        Thread.sleep(1500);
+
+		// Chuyển sang trang Select Menu
+		driver.navigate().to("https://demoqa.com/select-menu");
+//        Thread.sleep(1500);
+
+		WebElement selectElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("oldSelectMenu")));
+		Select select = new Select(selectElement);
+		List<WebElement> options = select.getOptions();
+
+		for (int i = 0; i < options.size(); i++) {
+			System.out.println("Option " + i + ": " + options.get(i).getText());
+			Thread.sleep(500);
+		}
+
+		Thread.sleep(1000);
+		driver.navigate().back();
+		Thread.sleep(1500);
+
+		// Truy cập trang chứa frame
+		driver.get("https://demoqa.com/frames");
+		Thread.sleep(1500);
+
+		// Chuyển vào frame
+		driver.switchTo().frame("frame1");
+
+		WebElement heading = driver.findElement(By.id("sampleHeading"));
+		System.out.println("Text trong frame1: " + heading.getText());
+		Thread.sleep(1000);
+
+		driver.switchTo().defaultContent();
+		Thread.sleep(1000);
+
+		js.executeScript("alert('Xin chào từ alert - Lê Hoài Nam!')");
+		Thread.sleep(5000);
+		driver.switchTo().alert().accept();
+		Thread.sleep(1000);
+		String title = driver.getTitle();
+		String url = driver.getCurrentUrl();
+		String html = driver.getPageSource();
+//		System.out.println(title + "\n" + url + "\n" + html);
+		String handle = driver.getWindowHandle();
+		System.out.println(handle);
+//		Set<String> allWindows = driver.getWindowHandles(); // Danh sách tất cả các cửa sổ
+//
+//		for (String windowHandle : allWindows) {
+//			driver.switchTo().window(windowHandle);// Chuyển đến từng cửa sổ một
+//			System.out.println("Switched to: " +driver.getTitle());
+//		}
+
+		driver.quit();
+	}
+}
