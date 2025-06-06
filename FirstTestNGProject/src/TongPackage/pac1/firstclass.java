@@ -1,0 +1,26 @@
+package TongPackage.pac1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class firstclass {
+	@Test (groups = "smoke")
+	public void FirstMethod() throws Exception
+	{
+		System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://tiki.com/");
+		System.out.println("This is first method of first class");
+		Thread.sleep(2000);
+		driver.quit();
+	}
+	
+	@Test(groups = "regression")
+	public void SecondtMethod()
+	{
+		System.out.println("This is Second Method of first class");
+	}
+}

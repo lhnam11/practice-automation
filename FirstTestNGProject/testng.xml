@@ -17,7 +17,7 @@
 	</test>
 </suite>-->
 
-<suite name="SuiteWithGroups">
+<!-- <suite name="SuiteWithGroups">
 	<test name="SmokeTestsOnly">
 		<groups>
 			<run>
@@ -28,7 +28,17 @@
 	<packages>
 		<package name="firstpackage"></package>
 	</packages>
-</suite>  
+</suite>  -->
+
+<suite name="Total Package">
+	<test name="Le Hoai Nam">
+		<packages>
+			<package name="TongPackage.*">
+				<exclude name="TongPackage.pac2" />
+			</package>
+		</packages>
+	</test>
+</suite> 
 
 <!-- <suite name="Demo exclude">
 	<test name="Exclude Method Test">
