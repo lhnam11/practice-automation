@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Tada" verbose="1">
+    <test name="DemoFirstTest">
+        <classes>
+            <class name="firstpackage.firstclass" />
+            
+        </classes>
+    </test>
+</suite>

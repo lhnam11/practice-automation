@@ -8,13 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">18,901</td><td></td><td></td></tr>
+<tr><th colspan="8">SuiteWithGroups</th></tr>
+<tr><td><a href="#t0">SmokeTestsOnly</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">13,436</td><td>smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">firsttestngpackage.AutomationTestNG</td><td><a href="#m0">demoOne</a></td><td rowspan="1">1749118281094</td><td rowspan="1">7135</td></tr><tr class="passedeven"><td><a href="#m1">demoThree</a></td><td rowspan="1">1749118292291</td><td rowspan="1">3293</td></tr><tr class="passedeven"><td><a href="#m2">demoTwo</a></td><td rowspan="1">1749118288237</td><td rowspan="1">4051</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteWithGroups</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SmokeTestsOnly &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">firstpackage.secondclass</td><td><a href="#m0">FirstMethod</a></td><td rowspan="1">1749193791717</td><td rowspan="1">16</td></tr><tr class="failedeven"><td><a href="#m1">SecondtMethod</a></td><td rowspan="1">1749193791741</td><td rowspan="1">5640</td></tr><tr><th colspan="4">SmokeTestsOnly &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">firstpackage.firstclass</td><td><a href="#m2">FirstMethod</a></td><td rowspan="1">1749193784005</td><td rowspan="1">7701</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">firsttestngpackage.AutomationTestNG#demoOne</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">firsttestngpackage.AutomationTestNG#demoThree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">firsttestngpackage.AutomationTestNG#demoTwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SmokeTestsOnly</h2><h3 id="m0">firstpackage.secondclass#FirstMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at firstpackage.secondclass.FirstMethod(secondclass.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">firstpackage.secondclass#SecondtMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [world] but found [hello]
+	at firstpackage.secondclass.SecondtMethod(secondclass.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">firstpackage.firstclass#FirstMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

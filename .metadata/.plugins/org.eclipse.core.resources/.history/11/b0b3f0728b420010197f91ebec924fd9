@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Tada" verbose="1">
+	<test name="DemoFirstTest">
+		<packages>
+			<package name="secondpackage" />
+		</packages>
+		<classes>
+			<class name="secondpackage.firstclass" />
+			<class name="first.firstClass">
+				<methods>
+					<include name="firstTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

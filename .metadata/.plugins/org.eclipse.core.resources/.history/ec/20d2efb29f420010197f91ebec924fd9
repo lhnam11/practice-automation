@@ -1,0 +1,35 @@
+package firstpackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class secondclass {
+	WebDriver driver ;
+
+	@Test(groups = "smoke")
+	public void FirstMethod() {
+		System.out.println("This is first method of secondclass.");
+		System.out.println("❌ Test 3 failed");
+		Assert.assertTrue(false); // Sẽ fail
+	}
+
+	@Test( // cho pép bật hoặc tắt test này, Nếu false, test sẽ bị bỏ qua
+			groups = { "smoke", "login" }
+
+	)
+	public void SecondtMethod() throws Exception {
+		try {
+			System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.get("https://lazada.com/");
+		
+		} finally {
+			driver.quit();
+		}
+
+	}
+
+}

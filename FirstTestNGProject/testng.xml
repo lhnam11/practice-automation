@@ -1,9 +1,43 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" verbose="1">
-    <test name="FirstTest">
-        <classes>
-            <class name="firstpackage.FirstClass" />
-        </classes>
-    </test>
-</suite>
+<!--<suite name="Tada" verbose="1">
+	<test name="DemoFirstTest">
+		<packages>
+			<package name="secondpackage" />
+			<package name="firstpackage" />
+		</packages>
+		<classes>
+			<class name="secondpackage.firstclass" />
+			<class name="firstpackage.firstclass">
+				<methods>
+					<include name="FirstMethod" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>-->
+
+<suite name="SuiteWithGroups">
+	<test name="SmokeTestsOnly">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+	</test>
+	<packages>
+		<package name="firstpackage"></package>
+	</packages>
+</suite>  
+
+<!-- <suite name="Demo exclude">
+	<test name="Exclude Method Test">
+		<classes>
+			<class name="firstpackage.firstclass">
+				<methods>
+					<exclude name="FirstMethod"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> -->
