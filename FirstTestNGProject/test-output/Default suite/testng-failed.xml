@@ -5,7 +5,6 @@
     <classes>
       <class name="firstpackage.secondclass">
         <methods>
-          <include name="SecondtMethod"/>
           <include name="FirstMethod"/>
         </methods>
       </class> <!-- firstpackage.secondclass -->

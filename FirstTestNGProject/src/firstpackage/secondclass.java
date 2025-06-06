@@ -2,7 +2,6 @@ package firstpackage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class secondclass {
@@ -12,11 +11,11 @@ public class secondclass {
 	public void FirstMethod() {
 		System.out.println("This is first method of secondclass.");
 		System.out.println("❌ Test 3 failed");
-		Assert.assertTrue(false); // Sẽ fail
+		//Assert.assertTrue(false); // Sẽ fail
 	}
 	@Test(//priority = 1, enabled = true, // cho pép bật hoặc tắt test này, Nếu false, test sẽ bị bỏ qua
-			groups = { "smoke", "login" }
-
+			groups = { "smoke", "login" },
+			description = "open Lazada web"
 //			timeOut = 2000, // nếu test này chạy quá 2s thì sẽ fail do nó time out
 //			invocationCount = 1, // test được lặp lại 3 lần để tránh test không ổn định
 //			expectedExceptions = ArithmeticException.class // nếu case này ra được ngoài lệ thì xem là pass, nếu không
@@ -29,7 +28,7 @@ public class secondclass {
 			driver.manage().window().maximize();
 			driver.get("https://lazada.com/");
 			System.out.println("This is first method of first class");
-			Assert.assertEquals("hello", "world");
+			//Assert.assertEquals("hello", "world");
 		} finally {
 			driver.quit();
 		}
