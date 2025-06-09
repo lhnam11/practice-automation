@@ -1,0 +1,36 @@
+package Assert;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+public class AssertExample extends Init {
+	@Test
+	public void UpdateProfile() throws Exception
+	{
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		WebElement usernameInput = driver.findElement(By.xpath("//input[@placeholder='Username']"));
+		usernameInput.sendKeys("Admin");
+		Thread.sleep(1000);
+		WebElement passwordInput = driver.findElement(By.xpath("//input[@placeholder='Password']"));
+		passwordInput.sendKeys("admin123");
+		Thread.sleep(1000);
+		WebElement loginButton = driver.findElement(By.xpath("//button[normalize-space()='Login']"));
+		loginButton.click();
+		Thread.sleep(2000);
+		WebElement myinfButton = driver.findElement(By.xpath("//span[normalize-space()='My Info']"));
+		myinfButton .click();
+		Thread.sleep(2000);
+		
+		//edit giá trị 
+		WebElement EmployeeFullName = driver.findElement(By.xpath("//input[@placeholder='First Name'] "));
+		EmployeeFullName.clear();
+		EmployeeFullName.sendKeys("avc");
+		
+		
+	}
+
+}

@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="firstpackage.secondclass">
+      <class name="UserInteractions.ActionsClass">
         <methods>
-          <include name="FirstMethod"/>
+          <include name="Setup"/>
+          <include name="TearDown"/>
+          <include name="TestAction"/>
         </methods>
-      </class> <!-- firstpackage.secondclass -->
+      </class> <!-- UserInteractions.ActionsClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,20 @@
+package UserInteractions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+public class ActionsClass extends Init {
+	@Test
+	public void TestAction()
+	{
+		driver.get("htpps://www.google.com");
+		Actions action = new Actions(driver);
+		// context click có nghĩa là click chuột phải
+	    WebElement searchInput = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
+	    searchInput.sendKeys("game");
+	
+	}
+
+}

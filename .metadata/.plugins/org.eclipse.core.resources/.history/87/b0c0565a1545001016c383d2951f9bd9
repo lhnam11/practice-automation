@@ -1,0 +1,34 @@
+package UserInteractions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class ActionsClass extends Init {
+
+    @Test
+    public void TestAction() {
+        driver.get("https://www.google.com/");
+
+        // Đợi cho ô tìm kiếm xuất hiện và có thể thao tác
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement searchInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//textarea[@id='APjFqb']")));
+
+        // Gõ từ khóa và nhấn Enter bằng Actions
+        Actions action = new Actions(driver);
+        action.moveToElement(searchInput)
+              .click()
+              .sendKeys("abc")
+              .sendKeys(Keys.ENTER)
+              .build()
+              .perform();
+    }
+}

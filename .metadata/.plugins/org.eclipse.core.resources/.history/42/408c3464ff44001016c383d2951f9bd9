@@ -1,0 +1,76 @@
+package Assert;
+
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+public class AssertExample extends Init {
+	public static void scrollToElement(WebDriver driver, WebElement element)
+	{
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+	@Test
+	public void UpdateProfile() throws Exception
+	{
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		WebElement usernameInput = driver.findElement(By.xpath("//input[@placeholder='Username']"));
+		usernameInput.sendKeys("Admin");
+		Thread.sleep(1000);
+		WebElement passwordInput = driver.findElement(By.xpath("//input[@placeholder='Password']"));
+		passwordInput.sendKeys("admin123");
+		Thread.sleep(1000);
+		WebElement loginButton = driver.findElement(By.xpath("//button[normalize-space()='Login']"));
+		loginButton.click();
+		Thread.sleep(2000);
+		WebElement myinfButton = driver.findElement(By.xpath("//span[normalize-space()='My Info']"));
+		myinfButton .click();
+		Thread.sleep(2000);
+		
+		//edit giá trị 
+		WebElement EmployeeFullName = driver.findElement(By.xpath("//input[@placeholder='First Name'] "));
+	    //scrollToElement(driver, EmployeeFullName);
+		EmployeeFullName.sendKeys(Keys.CONTROL + "a");
+		EmployeeFullName.sendKeys(Keys.BACK_SPACE);
+		Thread.sleep(5000);
+		String expectedValue = "tada";
+		EmployeeFullName.sendKeys(expectedValue);
+		
+		WebElement headerActual = driver.findElement(By.xpath("//h6[normalize-space()='Personal Details']"));
+		assertTrue(headerActual.getText().contains("Personal Details"));// kiểm tra cái cục header có chứa cái nhóm kia không
+		
+		String hearderExpected = "Personal Details";
+		String actualValue = EmployeeFullName.getAttribute("value");
+//		assertEquals(actualValue, expectedValue, "2 giá trị không khớp nhau ");
+	
+	}
+//	@Test
+//	public void DemoSoftAssert()
+//	{
+//		 driver.get("https://anhtester.com");
+//
+//	        SoftAssert softassert = new SoftAssert();
+//
+//	        String expectedTitle = "Anh Tester";
+//	        String originalTitle = driver.getTitle();
+//
+//	        System.out.println("*** Checking For The First Title ***");
+//
+//	        softassert.assertEquals(originalTitle, expectedTitle);
+//
+//	        System.out.println("*** Checking For The Second Title ***");
+//
+//	        softassert.assertEquals(originalTitle, "Anh Tester - Automation Testing");
+//
+//	        softassert.assertAll();
+//	}
+
+}

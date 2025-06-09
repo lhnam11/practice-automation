@@ -1,0 +1,19 @@
+package Assert;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+public class AssertExample extends Init {
+	@Test
+	public void UpdateProfile()
+	{
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+		WebElement usernameInput = driver.findElement(By.xpath("//input[@placeholder='Username']"));
+		usernameInput.sendKeys("Admintada");
+	}
+
+}

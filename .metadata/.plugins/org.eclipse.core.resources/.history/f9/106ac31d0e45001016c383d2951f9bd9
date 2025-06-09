@@ -1,0 +1,5 @@
+package UserInteractions;
+
+public sealed class ActionsClass {
+
+}

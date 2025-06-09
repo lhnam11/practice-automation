@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--1602039269\testng-customsuite.xml</span>
+                    <span>C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--1499184047\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="firstpackage.secondclass" class="method navigator-link" hash-for-method="FirstMethod">FirstMethod</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="firstpackage.secondclass" class="method navigator-link" hash-for-method="SecondtMethod">SecondtMethod</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="UserInteractions.ActionsClass" class="method navigator-link" hash-for-method="TestAction">TestAction</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,23 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">firstpackage.secondclass</span>
+              <span class="class-name">UserInteractions.ActionsClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="FirstMethod">
-                  </a> <!-- FirstMethod -->
-                  <span class="method-name">FirstMethod</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SecondtMethod">
-                  </a> <!-- SecondtMethod -->
-                  <span class="method-name">SecondtMethod</span>
-                  <em>
-(open Lazada web)                  </em>
+                  <a name="TestAction">
+                  </a> <!-- TestAction -->
+                  <span class="method-name">TestAction</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--1602039269\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--1499184047\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,7 +145,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;firstpackage.secondclass&quot;/&gt;
+      &lt;class name=&quot;UserInteractions.ActionsClass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -183,26 +169,6 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">login</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">SecondtMethod</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">FirstMethod</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">SecondtMethod</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -219,20 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SecondtMethod')
-data.setCell(0, 2, 'firstpackage.secondclass')
-data.setCell(0, 3, 6598);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'FirstMethod')
-data.setCell(1, 2, 'firstpackage.secondclass')
-data.setCell(1, 3, 14);
+data.setCell(0, 1, 'TestAction')
+data.setCell(0, 2, 'UserInteractions.ActionsClass')
+data.setCell(0, 3, 24955);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -258,15 +220,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">firstpackage.secondclass</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">FirstMethod</span>
+              <div class="chronological-class-name">UserInteractions.ActionsClass</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">SecondtMethod</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-name">TestAction</span>
+                <span class="method-start">1989 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">26954 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
