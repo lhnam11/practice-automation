@@ -1,0 +1,48 @@
+package Bai10_6AlertPopupIframe;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class HandleAlert extends Init {
+
+	@Test
+	public void AlertDemo() throws Exception {
+		driver.get("https://demo.guru99.com/test/delete_customer.php");
+
+		driver.findElement(By.name("cusid")).sendKeys("53920");
+
+		driver.findElement(By.name("submit")).submit();
+
+		Alert alert = driver.switchTo().alert();
+
+		String alertMessage = alert.getText();
+
+		System.out.println(alertMessage);
+		Thread.sleep(2000);
+
+		alert.accept(); // == click Ok Button
+		Thread.sleep(2000);
+
+		driver.get("https://demoqa.com/alerts");
+		driver.findElement(By.xpath("//button[@id='promtButton']")).click();
+
+		alert.sendKeys("Lê Hoài Nam");
+		Thread.sleep(3000);
+
+		// span[@id='promptResult']
+		alert.accept();
+		Thread.sleep(2000);
+
+		WebElement pResult = driver.findElement(By.xpath("//span[@id='promptResult']"));
+		assertEquals(pResult.getText(), alertMessage);
+		driver.quit();
+
+	}
+
+}

@@ -1,0 +1,87 @@
+package UserInteractions;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class TikiLoginAndSearchTest {
+
+    public static void main(String[] args) {
+        // Thiết lập WebDriver
+        System.setProperty("webdriver.chrome.driver", "D:\\LeHoaiNam\\Selenium\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        try {
+            // 1. Mở trang Tiki
+            driver.get("https://tiki.vn/");
+            driver.manage().window().maximize();
+            WebElement closePopup = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[class*='close'], button[data-view-id*='popup_close']")));
+            closePopup.click();
+            System.out.println("🔒 Đã đóng popup.");
+
+            // 2. Click vào nút Đăng nhập
+            WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span.userstyle__UserName-sc-6e6am-10"))); // có thể thay đổi tùy Tiki
+            loginButton.click();
+
+            // 3. Nhập số điện thoại hoặc email
+            WebElement phoneInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='email']")));
+            phoneInput.sendKeys("0786990226");  // <-- Thay bằng tài khoản test
+
+            // 4. Nhấn tiếp tục
+            WebElement continueButton = driver.findElement(By.xpath("//button[@type='submit']"));
+            continueButton.click();
+
+            // 5. Nhập mật khẩu
+            WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
+            passwordInput.sendKeys("Nam023432657."); // <-- Thay bằng mật khẩu test
+
+            // 6. Nhấn Đăng nhập
+            WebElement loginSubmit = driver.findElement(By.xpath("//button[@type='submit']"));
+            loginSubmit.click();
+
+            // 7. Chờ login thành công (có thể kiểm tra user hiển thị)
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.userstyle__UserName-sc-6e6am-10")));
+
+            System.out.println("✅ Đăng nhập thành công!");
+
+            // 8. Tìm kiếm từ khóa "iphone"
+            String keyword = "iphone";
+            WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@data-view-id='main_search_form_input']")));
+            searchBox.sendKeys(keyword);
+            searchBox.sendKeys(Keys.ENTER);
+
+            // 9. Chờ kết quả hiển thị
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.ProductList__Wrapper-sc-1dl80l3-0")));
+
+            // 10. Lấy danh sách sản phẩm
+            List<WebElement> results = driver.findElements(By.cssSelector("a.ProductItem__Name-sc-1f9hdu8-2")); // Tiki có thể đổi class, nên kiểm tra kỹ bằng DevTools
+
+            boolean isValid = true;
+
+            for (WebElement result : results) {
+                String productTitle = result.getText().toLowerCase();
+                if (!productTitle.contains(keyword.toLowerCase())) {
+                    isValid = false;
+                    System.out.println("❌ Sản phẩm không liên quan: " + productTitle);
+                }
+            }
+
+            Assert.assertTrue(isValid, "❌ Một hoặc nhiều kết quả không chứa từ khóa tìm kiếm!");
+            System.out.println("✅ Tất cả sản phẩm liên quan đến từ khóa tìm kiếm.");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // 11. Đóng trình duyệt
+            driver.quit();
+        }
+    }
+}

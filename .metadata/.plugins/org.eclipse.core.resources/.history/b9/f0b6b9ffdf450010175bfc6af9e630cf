@@ -1,0 +1,58 @@
+package Bai10_6AlertPopupIframe;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class HandleAlert extends Init {
+
+    @Test
+    public void AlertDemo() {
+        driver.get("https://demoqa.com/alerts");
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        // Click nút mở prompt alert
+        driver.findElement(By.id("promtButton")).click();
+
+        // Chờ alert xuất hiện và chuyển sang alert
+        wait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+
+        // In nội dung của alert
+        String alertMessage = alert.getText();
+        System.out.println(alertMessage);
+
+        // Nhập dữ liệu vào prompt trước khi accept
+        alert.sendKeys("Lê Hoài Nam");
+        alert.accept();
+
+        // Chờ kết quả hiển thị sau khi accept
+        WebElement pResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("promptResult")));
+        assertEquals(pResult.getText(), "You entered Lê Hoài Nam");
+
+        // cancel alert demo
+        WebElement tCancel = wait.until(ExpectedConditions.elementToBeClickable(By.id("confirmButton")));
+        tCancel.click();
+
+        // Chờ alert confirm xuất hiện và dismiss
+        wait.until(ExpectedConditions.alertIsPresent());
+        alert = driver.switchTo().alert();
+        alert.dismiss();
+
+        // Chờ và kiểm tra kết quả sau khi dismiss
+        WebElement tResult = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("confirmResult")));
+        assertFalse(tResult.isDisplayed());
+
+        driver.quit();
+    }
+}

@@ -1,0 +1,32 @@
+package Bai10_6AlertPopupIframe;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class HandleAlert extends Init{
+	
+	@Test
+	public void AlertDemo() throws Exception
+	{
+		driver.get("https://demo.guru99.com/test/delete_customer.php");
+		
+		driver.findElement(By.name("cusid")).sendKeys("53920");
+		
+		driver.findElement(By.name("submit")).submit();
+		
+		Alert alert = driver.switchTo().alert();
+		
+		String alertMessage = driver.switchTo().alert().getText();
+		
+		System.out.println(alertMessage);
+		Thread.sleep(2000);
+		
+		driver.switchTo().alert().accept();
+		Thread.sleep(2000);
+		driver.quit();
+		
+	}
+
+}

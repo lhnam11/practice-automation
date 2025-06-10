@@ -1,0 +1,17 @@
+package UserInteractions;
+import Initialization.Init;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+
+import org.testng.annotations.Test;
+
+public class RobotClass extends Init {
+	@Test
+	public void inputSearch() throws AWTException
+	{
+		Robot robot = new Robot();
+		
+	}
+	
+}

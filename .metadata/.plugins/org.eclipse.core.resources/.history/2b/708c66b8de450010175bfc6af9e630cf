@@ -1,0 +1,53 @@
+package Bai10_6AlertPopupIframe;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class HandleAlert extends Init {
+
+	@Test
+	public void AlertDemo() throws Exception {
+		driver.get("https://demoqa.com/alerts");
+
+		// Click nút mở prompt alert
+		driver.findElement(By.xpath("//button[@id='promtButton']")).click();
+
+		// Chuyển sang alert
+		Alert alert = driver.switchTo().alert();
+
+		// In nội dung của alert
+		String alertMessage = alert.getText();
+		System.out.println(alertMessage);
+		Thread.sleep(2000);
+
+		// Nhập dữ liệu vào prompt trước khi accept
+		alert.sendKeys("Lê Hoài Nam");
+		Thread.sleep(2000);
+
+		alert.accept();
+	
+		Thread.sleep(2000);
+
+		// Kiểm tra kết quả
+		WebElement pResult = driver.findElement(By.xpath("//span[@id='promptResult']"));
+		assertEquals(pResult.getText(), "You entered Lê Hoài Nam");
+		Thread.sleep(2000);
+
+		// cancel
+		WebElement tCancel = driver.findElement(By.xpath("//button[@id='confirmButton']"));
+		WebElement tResult = driver.findElement(By.xpath("//span[@id='confirmResult']"));
+		tCancel.click();
+	    assertTrue(tResult.isDisplayed());
+		alert.dismiss();
+		driver.quit();
+	}
+
+}

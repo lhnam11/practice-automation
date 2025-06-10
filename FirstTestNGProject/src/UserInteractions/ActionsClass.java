@@ -1,7 +1,6 @@
 package UserInteractions;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -9,43 +8,60 @@ import org.testng.annotations.Test;
 import Initialization.Init;
 
 public class ActionsClass extends Init {
-	@Test
-	public void TestAction() throws Exception {
-		driver.get("https://www.google.com/");
-
-		// context click có nghĩa là click chuột phải
-		WebElement searchInput = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
-
-		Actions action = new Actions(driver);
-
-		action.sendKeys(searchInput, "Anh tester").build().perform();
-
-		action.sendKeys(Keys.ENTER).build().perform();
-
-		Thread.sleep(2000);
-		WebElement test = driver.findElement(By.xpath(
-				"//a[@href='https://anhtester.com/']//h3[@class='LC20lb MBeuO DKV0Md'][normalize-space()='Anh Tester Automation Testing']"));
-
-		test.click();
-
-		Thread.sleep(2000);
-		//realease kết hợp với click and hold
-
-		WebElement textHeader = driver.findElement(By.xpath(
-				"//div[@class='col-lg-6 col-md-6']//h2[@class='section__title'][contains(text(),'Anh Tester')]"));
-		WebElement moveTest = driver.findElement(By.xpath("//*[@id=\"style-7\"]/section[6]/div/div/div/div/div[2]/a"));
-		
+//	@Test
+//	public void TestAction() throws Exception {
+//		driver.get("https://www.google.com/");
+//
+//		// context click có nghĩa là click chuột phải
+//		WebElement searchInput = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
+//
+//		Actions action = new Actions(driver);
+//
+//		action.sendKeys(searchInput, "Anh tester").build().perform();
+//
+//		action.sendKeys(Keys.ENTER).build().perform();
+//
+//		Thread.sleep(2000);
+//		WebElement test = driver.findElement(By.xpath(
+//				"//a[@href='https://anhtester.com/']//h3[@class='LC20lb MBeuO DKV0Md'][normalize-space()='Anh Tester Automation Testing']"));
+//
+//		test.click();
+//
+//		Thread.sleep(2000);
+//		//realease kết hợp với click and hold
+//
+//		WebElement textHeader = driver.findElement(By.xpath(
+//				"//div[@class='col-lg-6 col-md-6']//h2[@class='section__title'][contains(text(),'Anh Tester')]"));
+//		WebElement moveTest = driver.findElement(By.xpath("//a[normalize-space()='All Blogs']"));
+//		
 //		action.doubleClick(textHeader).build().perform();
-//		action.contextClick(textHeader).build().perform();
+//		Thread.sleep(2000);
+////		action.contextClick(textHeader).build().perform();
+//		
+////		action.release(textHeader).build().perform();
+//		action.moveToElement(moveTest).build().perform(); //isues double click
+//		
+//		
+//		Thread.sleep(2000);
+//		
+//		
+//
+//	}
+	@Test
+	public void TestDragAnhDrop() throws Exception
+	{
+		driver.get("https://demo.guru99.com/test/drag_drop.html");
 		
-//		action.release(textHeader).build().perform();
-//		action.moveToElement(moveTest).build().perform(); isues double click
+		WebElement From = driver.findElement(By.xpath("//*[@id='credit2']/a"));
 		
+		WebElement To = driver.findElement(By.xpath("//*[@id='bank']/li"));
 		
-		Thread.sleep(2000);
+		Actions action = new Actions(driver);
 		
+		Thread.sleep(5000);
 		
-
+		action.dragAndDrop(From, To).build().perform();
+		
 	}
 
 }
