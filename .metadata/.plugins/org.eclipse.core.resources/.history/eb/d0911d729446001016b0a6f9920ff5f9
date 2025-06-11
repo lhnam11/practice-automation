@@ -1,0 +1,33 @@
+package Bai10_6AlertPopupIframe;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class Iframe extends Init{
+
+    @Test
+    public void iFrame01() throws InterruptedException {
+
+        driver.navigate().to("https://demoqa.com/frames");
+        Thread.sleep(3000);
+        
+        List<WebElement> allIframes = driver.findElements(By.tagName("iframe"));
+        int visibleFrameCount = 0;
+
+        for (int i = 0; i < allIframes.size(); i++) {
+            WebElement frame = allIframes.get(i);
+            if (frame.isDisplayed()) {
+                visibleFrameCount++;
+                System.out.println("Iframe #" + i + " - src: " + frame.getAttribute("src"));
+            }
+        }
+        System.out.println("Tổng số iframe hiển thị thực sự: " + visibleFrameCount);
+
+       
+    }
+}

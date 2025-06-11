@@ -4,7 +4,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="FirstTestNGProject"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
-        <listEntry value="DemoAnotation.Demo"/>
+        <listEntry value="Bai11_6JavaScriptExecutor.Demo"/>
     </listAttribute>
     <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
     <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>

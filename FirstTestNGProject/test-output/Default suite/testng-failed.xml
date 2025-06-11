@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Bai10_6AlertPopupIframe.HandleAlert">
+      <class name="firstpackage.firstclass">
         <methods>
-          <include name="Setup"/>
-          <include name="TearDown"/>
-          <include name="AlertDemo"/>
+          <include name="SecondtMethod"/>
         </methods>
-      </class> <!-- Bai10_6AlertPopupIframe.HandleAlert -->
+      </class> <!-- firstpackage.firstclass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

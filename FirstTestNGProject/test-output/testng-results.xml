@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T16:48:04 ICT" name="Default suite" finished-at="2025-06-10T16:48:34 ICT" duration-ms="29568">
+  <suite started-at="2025-06-11T16:59:40 ICT" name="Default suite" finished-at="2025-06-11T16:59:53 ICT" duration-ms="12817">
     <groups>
+      <group name="regression">
+        <method signature="firstclass.SecondtMethod()[pri:0, instance:firstpackage.firstclass@3cebbb30]" name="SecondtMethod" class="firstpackage.firstclass"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="firstclass.FirstMethod()[pri:0, instance:firstpackage.firstclass@3cebbb30]" name="FirstMethod" class="firstpackage.firstclass"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-06-10T16:48:04 ICT" name="Default test" finished-at="2025-06-10T16:48:34 ICT" duration-ms="29568">
-      <class name="Bai10_6AlertPopupIframe.HandleAlert">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Bai10_6AlertPopupIframe.HandleAlert@229c6181]" started-at="2025-06-10T16:48:04 ICT" name="Setup" finished-at="2025-06-10T16:48:06 ICT" duration-ms="1912" status="PASS">
+    <test started-at="2025-06-11T16:59:40 ICT" name="Default test" finished-at="2025-06-11T16:59:53 ICT" duration-ms="12817">
+      <class name="firstpackage.firstclass">
+        <test-method signature="FirstMethod()[pri:0, instance:firstpackage.firstclass@3cebbb30]" started-at="2025-06-11T16:59:40 ICT" name="FirstMethod" finished-at="2025-06-11T16:59:53 ICT" duration-ms="12657" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="AlertDemo()[pri:0, instance:Bai10_6AlertPopupIframe.HandleAlert@229c6181]" started-at="2025-06-10T16:48:06 ICT" name="AlertDemo" finished-at="2025-06-10T16:48:31 ICT" duration-ms="25235" status="FAIL">
+        </test-method> <!-- FirstMethod -->
+        <test-method signature="SecondtMethod()[pri:0, instance:firstpackage.firstclass@3cebbb30]" started-at="2025-06-11T16:59:53 ICT" name="SecondtMethod" finished-at="2025-06-11T16:59:53 ICT" duration-ms="29" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[expected [lehoainam] but found [hoainam]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+              <![CDATA[java.lang.AssertionError: expected [lehoainam] but found [hoainam]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at org.testng.Assert.assertFalse(Assert.java:89)
-at Bai10_6AlertPopupIframe.HandleAlert.AlertDemo(HandleAlert.java:53)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at firstpackage.firstclass.SecondtMethod(firstclass.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,12 +64,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AlertDemo -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Bai10_6AlertPopupIframe.HandleAlert@229c6181]" started-at="2025-06-10T16:48:31 ICT" name="TearDown" finished-at="2025-06-10T16:48:34 ICT" duration-ms="2333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- Bai10_6AlertPopupIframe.HandleAlert -->
+        </test-method> <!-- SecondtMethod -->
+      </class> <!-- firstpackage.firstclass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
