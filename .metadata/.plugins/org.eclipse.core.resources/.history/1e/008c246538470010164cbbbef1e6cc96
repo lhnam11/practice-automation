@@ -1,0 +1,43 @@
+package Bai11_6JavaScriptExecutor;
+
+import java.lang.annotation.Documented;
+
+import org.openqa.selenium.By;
+// tại sao dùng javaexucteor mà không dùng selnium tại vì có 1 số trường hợp nó bị khuất thì selenium lấy không được,
+// nếu scroll quá xa thì selenium lấy không được nó cho rằng element nó bị khuất
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class Demo extends Init {
+	@Test
+	public void jsExcutorDemo() throws Exception {
+		// khai báo
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		driver.get("https://anhtester.com/");
+
+		Thread.sleep(1000);
+		WebElement button = driver.findElement(By.xpath("//h3[normalize-space()='Website Testing']"));
+
+		
+
+		js.executeScript("arguments[0].click()", button);
+		Thread.sleep(1000);
+
+		String titleText = js.executeScript("return document.title;").toString();
+		System.out.println("Page Title is: " + titleText);
+
+		String domainName = js.executeScript("return document.domain;").toString();
+		System.out.println("Domain is: " + domainName);
+
+		driver.get("https://demoqa.com/checkbox");
+		js.executeScript("document.querySelector('.rct-checkbox').click();");
+		
+		
+
+	}
+
+}

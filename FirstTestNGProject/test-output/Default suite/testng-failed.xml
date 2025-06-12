@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="firstpackage.firstclass">
+      <class name="Bai12_6Wait.TestWait">
         <methods>
-          <include name="SecondtMethod"/>
+          <include name="DmWait"/>
+          <include name="Setup"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- firstpackage.firstclass -->
+      </class> <!-- Bai12_6Wait.TestWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

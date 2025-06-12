@@ -1,0 +1,29 @@
+package Bai12_6Wait;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import Initialization.Init;
+
+public class TestWait extends Init {
+	
+	@Test
+	public void DmWait()
+	{
+		driver.get("https://anhtester.com/");
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		
+		driver.findElement(By.xpath("//h3[normalize-space()='Website Testing']")).click();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[normalize-space()='Website Testing']")));
+		
+	}
+
+
+
+
+   
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<!--<suite name="Tada" verbose="1">
+<suite name="Tada" verbose="1">
 	<test name="DemoFirstTest">
 		<packages>
 			<package name="secondpackage" />
@@ -15,7 +15,7 @@
 			</class>
 		</classes>
 	</test>
-</suite>-->
+</suite>
 
 <!-- <suite name="SuiteWithGroups">
 	<test name="SmokeTestsOnly">
@@ -53,7 +53,7 @@
 </suite> -->
 
 <!-- thực thi annotaion -->
- <suite name="First Suite" verbose="1">
+<!--  <suite name="First Suite" verbose="1">
 	<test name="First Test">
 		<classes>
 			<class name="DemoAnotation.Demo">
@@ -72,7 +72,7 @@
 			</class>
 		</classes>
 	</test>
-</suite> 
+</suite>  -->
 
 <!-- <suite name="Inheritance Suite" verbose="1">
 	<test name="Inheritance Test">
