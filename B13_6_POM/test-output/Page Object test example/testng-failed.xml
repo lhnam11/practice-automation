@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object test example]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="https://anhtester.com/"/>
+  <parameter name="browserType" value="chrome"/>
+  <test thread-count="5" name="sample test(failed)">
+    <classes>
+      <class name="com.anhtester.testcases.SignInTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="signIn"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.anhtester.testcases.SignInTest -->
+    </classes>
+  </test> <!-- sample test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->

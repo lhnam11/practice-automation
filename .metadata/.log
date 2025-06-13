@@ -5933,3 +5933,429 @@ java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\ecl
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 63048 -protocol json -d D:\Javafortest\FirstTestNGProject\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--817229640\testng-customsuite.xml
 java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\FirstTestNGProject\bin:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chromium-driver-4.33.0-sources.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 63048 -protocol json -d D:\Javafortest\FirstTestNGProject\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--817229640\testng-customsuite.xml
+!SESSION 2025-06-12 17:25:23.701 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.dsl.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 17:25:27.277
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-06-12 17:25:27.617
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (920) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-12 17:25:31.239
+!MESSAGE Logback config file: D:\Javafortest\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-12 17:25:38.999
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\nam.le'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-06-13 09:14:18.403 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.dsl.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-13 09:14:24.577
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-06-13 09:14:25.079
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (920) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-06-13 09:14:34.309
+!MESSAGE Logback config file: D:\Javafortest\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-06-13 09:14:59.378
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\nam.le'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 09:22:18.433
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\FirstTestNGProject\bin D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chromium-driver-4.33.0-sources.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61707 -protocol json -d D:\Javafortest\FirstTestNGProject\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--428615824\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\FirstTestNGProject\bin:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chromium-driver-4.33.0-sources.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 61707 -protocol json -d D:\Javafortest\FirstTestNGProject\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--428615824\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 09:25:11.794
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\FirstTestNGProject\bin D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chromium-driver-4.33.0-sources.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61807 -protocol json -d D:\Javafortest\FirstTestNGProject\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--829646772\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\FirstTestNGProject\bin:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chromium-driver-4.33.0-sources.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar org.testng.remote.RemoteTestNG -serport 61807 -protocol json -d D:\Javafortest\FirstTestNGProject\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--829646772\testng-customsuite.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-06-13 13:22:07.560
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 13:48:32.802
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57393 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 57393 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.eclipse.ui 4 0 2025-06-13 13:51:41.911
+!MESSAGE A resource exists with a different case: '/B13_6_POM/src/com/anhtester/testcases/DashboardTest.java'.
+!STACK 0
+org.eclipse.core.commands.ExecutionException: A resource exists with a different case: '/B13_6_POM/src/com/anhtester/testcases/DashboardTest.java'.
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.undo(UndoableOperation2ChangeAdapter.java:215)
+	at org.eclipse.core.commands.operations.TriggeredOperations.undo(TriggeredOperations.java:214)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.doUndo(DefaultOperationHistory.java:399)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.undo(DefaultOperationHistory.java:1141)
+	at org.eclipse.ui.operations.UndoActionHandler.runCommand(UndoActionHandler.java:85)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.lambda$0(OperationHistoryActionHandler.java:294)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:434)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.access$1(TimeTriggeredProgressMonitorDialog.java:1)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.lambda$0(TimeTriggeredProgressMonitorDialog.java:154)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.run(TimeTriggeredProgressMonitorDialog.java:166)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.run(OperationHistoryActionHandler.java:333)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:124)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:569)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:644)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1334)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1207)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1232)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1217)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1259)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1255)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1738)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4880)
+	at org.eclipse.swt.widgets.Tree.WM_CHAR(Tree.java:6155)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4757)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:6150)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5089)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3705)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+Caused by: Java Model Exception: Core Exception [code 275] A resource exists with a different case: '/B13_6_POM/src/com/anhtester/testcases/DashboardTest.java'.
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:52)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:6106)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:106)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.lambda$0(DynamicValidationStateChange.java:105)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:6106)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.perform(DynamicValidationStateChange.java:106)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.lambda$0(UndoableOperation2ChangeAdapter.java:332)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.executeChange(UndoableOperation2ChangeAdapter.java:354)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.undo(UndoableOperation2ChangeAdapter.java:199)
+	... 65 more
+Caused by: java.lang.Exception: A resource exists with a different case: '/B13_6_POM/src/com/anhtester/testcases/DashboardTest.java'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:352)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:330)
+	at org.eclipse.core.internal.resources.File.checkCreatable(File.java:215)
+	at org.eclipse.core.internal.resources.File.create(File.java:138)
+	at org.eclipse.core.internal.resources.File.create(File.java:173)
+	at org.eclipse.core.internal.resources.undo.snapshot.FileSnapshot.createExistentResourceFromHandle(FileSnapshot.java:155)
+	at org.eclipse.core.internal.resources.undo.snapshot.AbstractResourceSnapshot.createResource(AbstractResourceSnapshot.java:85)
+	at org.eclipse.core.internal.resources.undo.snapshot.FileSnapshot.createResource(FileSnapshot.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.UndoDeleteResourceChange.perform(UndoDeleteResourceChange.java:77)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.access$0(DynamicValidationStateChange.java:1)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.lambda$0(DynamicValidationStateChange.java:105)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	... 85 more
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 13:56:43.126
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57715 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 57715 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 13:57:08.000
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57749 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 57749 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 13:58:08.392
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57847 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 57847 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:11:23.567
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58764 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 58764 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:11:50.731
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58779 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--88978819\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 58779 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--88978819\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:12:13.337
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58799 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 58799 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:12:29.904
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58818 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--863600948\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 58818 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--863600948\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:13:15.545
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58858 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 58858 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:14:07.074
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58917 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 58917 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:16:24.266
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59039 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 59039 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 14:19:59.766
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59194 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 59194 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:08:30.071
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61645 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse-1112076432\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 61645 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse-1112076432\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:09:25.844
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61689 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--1558188204\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 61689 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--1558188204\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:10:14.975
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61709 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse-1025477281\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 61709 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse-1025477281\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:15:27.437
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61905 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 61905 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:22:50.681
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62206 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse-183706863\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 62206 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse-183706863\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:24:10.496
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62459 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 62459 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:24:20.544
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62494 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--942129715\testng-customsuite.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 62494 -protocol json -d D:\Javafortest\B13_6_POM\test-output C:\Users\nam.le\AppData\Local\Temp\testng-eclipse--942129715\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:24:25.635
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62499 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 62499 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:54:39.922
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63742 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 63742 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 15:55:04.526
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 63782 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 63782 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 16:07:42.702
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64241 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 64241 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 16:08:24.348
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64285 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 64285 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 16:17:48.430
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64664 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 64664 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\src\com\anhtester\testcases\runTest.xml
+
+!ENTRY org.testng.eclipse 1 0 2025-06-13 16:18:04.811
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar D:\Javafortest\B13_6_POM\bin D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64703 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+java -ea -classpath D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\1172\0\.cp\lib\testng-remote.jar:D:\Javafortest\B13_6_POM\bin:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.testng_7.11.0.r202503091654.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\com.beust.jcommander_1.83.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\slf4j.api_2.0.17.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.yaml.snakeyaml_2.2.0.jar:D:\LeHoaiNam\Selenium\eclipse-dsl-2023-03-R-win32-x86_64\eclipse\plugins\org.webjars.jquery_3.7.1.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1).zip:D:\LeHoaiNam\Selenium\selenium-server-standalone-3.141.59.jar:D:\LeHoaiNam\Selenium\selenium-java-4.33.0 (1)\selenium-chrome-driver-4.33.0-sources.jar org.testng.remote.RemoteTestNG -serport 64703 -protocol json -d D:\Javafortest\B13_6_POM\test-output D:\Javafortest\B13_6_POM\testng.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:04.105
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:04.725
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:05.234
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:05.597
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:06.011
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:06.379
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-06-13 17:12:07.006
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-06-13 17:12:07.007
+!MESSAGE An internal error occurred during: "Download sources and javadoc".
+!STACK 0
+java.lang.IllegalStateException: m2e is shut down!
+	at org.eclipse.m2e.core.embedder.IMavenConfiguration.getWorkspaceConfiguration(IMavenConfiguration.java:142)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.newExecutionRequest(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:305)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

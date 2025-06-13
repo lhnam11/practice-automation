@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Login Test Suite">
+    <parameter name="browserType" value="chrome" />
+    <parameter name="appURL" value="https://www.saucedemo.com/" />
+
+    <test name="SauceDemo Login Tests">
+        <classes>
+            <class name="com.anhtester.testcases.SignInTest" />
+        </classes>
+    </test>
+</suite>

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-12T14:42:54 ICT" name="Default suite" finished-at="2025-06-12T14:43:02 ICT" duration-ms="7322">
+  <suite started-at="2025-06-13T09:25:13 ICT" name="Default suite" finished-at="2025-06-13T09:25:21 ICT" duration-ms="8100">
     <groups>
     </groups>
-    <test started-at="2025-06-12T14:42:54 ICT" name="Default test" finished-at="2025-06-12T14:43:02 ICT" duration-ms="7322">
+    <test started-at="2025-06-13T09:25:13 ICT" name="Default test" finished-at="2025-06-13T09:25:21 ICT" duration-ms="8100">
       <class name="Bai12_6Wait.TestWait">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Bai12_6Wait.TestWait@4d154ccd]" started-at="2025-06-12T14:42:54 ICT" name="Setup" finished-at="2025-06-12T14:42:56 ICT" duration-ms="1728" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Bai12_6Wait.TestWait@4b45a2f5]" started-at="2025-06-13T09:25:13 ICT" name="Setup" finished-at="2025-06-13T09:25:14 ICT" duration-ms="1785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="DmWait()[pri:0, instance:Bai12_6Wait.TestWait@4d154ccd]" started-at="2025-06-12T14:42:56 ICT" name="DmWait" finished-at="2025-06-12T14:42:59 ICT" duration-ms="3225" status="PASS">
+        <test-method signature="DmWait()[pri:0, instance:Bai12_6Wait.TestWait@4b45a2f5]" started-at="2025-06-13T09:25:14 ICT" name="DmWait" finished-at="2025-06-13T09:25:18 ICT" duration-ms="4071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DmWait -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Bai12_6Wait.TestWait@4d154ccd]" started-at="2025-06-12T14:42:59 ICT" name="TearDown" finished-at="2025-06-12T14:43:02 ICT" duration-ms="2307" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Bai12_6Wait.TestWait@4b45a2f5]" started-at="2025-06-13T09:25:18 ICT" name="TearDown" finished-at="2025-06-13T09:25:21 ICT" duration-ms="2187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
