@@ -1150,3 +1150,4 @@
 2025-06-13 17:12:06,996 [Worker-97: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/4.28.1/selenium-ie-driver-4.28.1-sources.jar
 2025-06-13 17:12:07,005 [Worker-97: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.seleniumhq.selenium:selenium-ie-driver:4.28.1
 2025-06-13 17:12:07,005 [Worker-97: Download sources and javadoc] WARN  o.e.m.j.internal.DownloadSourcesJob - IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/DesignPattern
+2025-06-13 17:15:05,723 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
