@@ -1,6 +1,0 @@
-package UserInteractions;
-import Initialization.Init;
-import org.openqa.selenium.interactions.Action;
-public class RobotClass extends Init {
-
-}
