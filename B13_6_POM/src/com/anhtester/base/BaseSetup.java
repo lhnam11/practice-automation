@@ -11,9 +11,9 @@ import org.testng.annotations.Parameters;
 
 public class BaseSetup {
 
-	private WebDriver driver; // khi private cái webdriver thì mình phải khởi tạo get để các class khác cần thì sử dụng 
+	private WebDriver driver; // khi private cái webdriver thì mình phải khởi tạo get để các class khác cần thì sử dụng
 	// nếu đã public webdriver thì không cần sử dụng  getDriver bên dưới
-	
+
 	static String driverPath = "resources\\drivers\\";
 
 	public WebDriver getDriver() {
@@ -35,14 +35,14 @@ public class BaseSetup {
 		}
 	}
 
-	
 	//Khởi tạo cấu hình của các Browser để đưa vào Switch Case
-	
+
 	private static WebDriver initChromeDriver(String appURL) {
 		System.out.println("Launching Chrome browser...");
 		System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+
 		driver.navigate().to(appURL);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -57,7 +57,7 @@ public class BaseSetup {
 		driver.navigate().to(appURL);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+
 		return driver;
 	}
 
@@ -77,5 +77,7 @@ public class BaseSetup {
 	public void tearDown() throws Exception {
 		Thread.sleep(2000);
 		driver.quit();
+
+
 	}
 }

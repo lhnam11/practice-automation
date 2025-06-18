@@ -9,10 +9,12 @@ public class CheckoutPage {
 
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
+        
         PageFactory.initElements(driver, this);
     }
 
     public String getCheckoutTitle() {
+        
         return driver.findElement(By.className("title")).getText(); // "Checkout: Your Information"
     }
 }

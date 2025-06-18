@@ -18,6 +18,7 @@ public class CartPage {
         checkoutButton.click();
         return new CheckoutPage(driver);
     }
+
 }
 
 

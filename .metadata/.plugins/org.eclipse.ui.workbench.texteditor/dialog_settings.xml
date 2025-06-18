@@ -29,6 +29,8 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="&lt;scope&gt;test&lt;/scope&gt;"/>
+			<item value="DesignPattern"/>
 			<item value="setText"/>
 		</list>
 	</section>
