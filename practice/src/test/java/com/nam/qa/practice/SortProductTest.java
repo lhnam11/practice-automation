@@ -16,8 +16,8 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 
 @Listeners({io.qameta.allure.testng.AllureTestNg.class})
-@Epic("Sản phẩm")
-@Feature("Chức năng sắp xếp sản phẩm")
+@Epic("DropdownSortProduct")
+@Feature("Product sorting function")
 public class SortProductTest extends BaseClass {
 	private ValidateHelper validateHelper;
 	private SignInPage signInPage;

@@ -5,8 +5,9 @@
 	</listeners>
 	<test name="Run All Tests">
 		<classes>
-			<class name="com.nam.qa.practice.SingInTest" />
+			<class name="com.nam.qa.practice.SignInTest" />
 			<class name="com.nam.qa.practice.SortProductTest" />
+			<class name="com.nam.qa.practice.ProductTest" />
 		</classes>
 	</test>
 </suite>

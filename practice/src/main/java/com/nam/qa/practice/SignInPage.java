@@ -28,10 +28,11 @@ public class SignInPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void signin(String username, String password) {
+	public ProductPage signin(String username, String password) {
 		inputUserNam.sendKeys(username);
 		inputPassWord.sendKeys(password);
 		loginBtn.click();
+		return new ProductPage(driver); 
 
 	}
 
