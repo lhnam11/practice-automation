@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,11 +29,11 @@ public class ValidateHelper {
 		driver.findElement(element).sendKeys(value);
 	}
 
-	public void ClickElement(By element)
+	public void ClickElement(WebElement element)
     {
        //Click của một phần tử element truyền vào 
-       wait.until(ExpectedConditions.elementToBeClickable(element));
-       driver.findElement(element).click();
+       wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+     
        //Click của của Js
 //       js.executeScript("arguments[0].click()", driver.findElement(element));
     }
