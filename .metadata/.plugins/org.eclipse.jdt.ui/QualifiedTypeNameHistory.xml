@@ -50,8 +50,6 @@
     <fullyQualifiedTypeName name="net.bytebuddy.implementation.InvokeDynamic.InvocationProvider.NameProvider.ForExplicitName"/>
     <fullyQualifiedTypeName name="org.testng.annotations.Listeners"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-    <fullyQualifiedTypeName name="com.nam.qa.POM.ValidateHelper"/>
     <fullyQualifiedTypeName name="io.qameta.allure.Allure"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="com.nam.qa.POM.ValidateHelper"/>
 </qualifiedTypeNameHistroy>

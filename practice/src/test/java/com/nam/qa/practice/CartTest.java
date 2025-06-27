@@ -30,7 +30,17 @@ public class CartTest extends BaseClass {
 		signInPage.signin("standard_user", "secret_sauce");
 	}
 
-//	@Test(priority = 0)
+	@Test(priority = 0)
+	public void testMenuCartPage()
+	{
+		 ValidateHelper validateHelper = new ValidateHelper(driver);
+		 driver.findElement(By.xpath("//button[@id='react-burger-menu-btn']")).click();   
+		 validateHelper.ClickElement(driver.findElement(By.xpath("//a[@id='logout_sidebar_link']")));
+		 String url = driver.getCurrentUrl();
+		 assertEquals(url, "https://www.saucedemo.com/","Logout Failed");
+	}
+
+//	@Test(priority = 1)
 //	public void checkButtonContinueShopping() {
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
 //		validateHelper.ClickElement(driver.findElement(By.className("shopping_cart_link")));
@@ -42,7 +52,7 @@ public class CartTest extends BaseClass {
 //	}
 //
 //
-//	@Test(priority = 1)
+//	@Test(priority = 2)
 //	public void checkButtonCheckout() {
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
 //		validateHelper.ClickElement(driver.findElement(By.className("shopping_cart_link")));
@@ -53,7 +63,7 @@ public class CartTest extends BaseClass {
 //		Allure.step("✅ URL is correct after navigating to the checkout page!");
 //	}
 //
-//	@Test(priority = 2)
+//	@Test(priority = 3)
 //	public void TestProductIsAddedToCartSuccessfully() {
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
 //		int productCount = driver.findElements(By.className("inventory_item_name")).size();
@@ -73,7 +83,7 @@ public class CartTest extends BaseClass {
 //		}
 //	}
 //
-//	@Test(priority = 3)
+//	@Test(priority = 4)
 //	public void TestProductNameMatchesBetweenProductAndCartPages() {
 //
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
@@ -109,7 +119,7 @@ public class CartTest extends BaseClass {
 //		}
 //	}
 //
-//	@Test(priority = 4)
+//	@Test(priority = 5)
 //	public void TestProductDescriptionMatchesBetweenProductAndCartPages() {
 //
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
@@ -145,7 +155,7 @@ public class CartTest extends BaseClass {
 //		}
 //	}
 //
-//	@Test(priority = 5)
+//	@Test(priority = 6)
 //	public void TestProductPriceMatchesBetweenProductAndCartPages() {
 //
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
@@ -180,7 +190,7 @@ public class CartTest extends BaseClass {
 //			removeBtns.get(0).click();
 //		}
 //	}
-//	@Test(priority = 6)
+//	@Test(priority = 7)
 //	public void CheckQuantityProduct() {
 //		ValidateHelper validateHelper = new ValidateHelper(driver);
 //		int productCount = driver.findElements(By.className("inventory_item_name")).size();
@@ -200,7 +210,7 @@ public class CartTest extends BaseClass {
 //		}
 //	}
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void TestRemoveProductFromCartPage() throws Exception {
 		ValidateHelper validateHelper = new ValidateHelper(driver);
 		int productCount = driver.findElements(By.className("inventory_item_name")).size();
